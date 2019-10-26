@@ -1,0 +1,63 @@
+.btn-lg {
+    background: $dark-blue;
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    box-shadow: $btn-lg-shadow;
+    font-size: 1.1rem;
+    display: inline-block;
+    transition: all .25s;
+    margin-top: 6.5rem;
+    
+    a {
+        color: $white;
+        font-weight: $font-weight-bold;
+    }
+
+    &:hover {
+        margin-top: 5.85rem;
+        margin-bottom: .75rem;
+    }
+}
+
+
+.btn-sm {
+    color: #fff;
+    background: $dark-blue;
+    
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: $btn-lg-shadow;
+    border-radius: 10rem;
+    padding: 1.2rem 2.8rem;
+    margin: 0rem;
+    transition: all 0.2s ease-out 0s;
+    margin-top: 5rem;
+
+    &:hover {
+        margin-top: 4.5rem;
+        margin-bottom: .5rem;
+    }
+}
+
+.btn-sm--outline {
+    color: $dark-grey;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: solid 1px $dark-grey;
+    border-radius: 10rem;
+    padding: 1.2rem 2.8rem;
+    margin: 0rem;
+    transition: all 0.2s ease-out 0s;
+    margin-top: 5rem;
+
+    &:hover {
+        &:hover {
+            margin-top: 4.5rem;
+            margin-bottom: .5rem;
+        }
+    }
+}

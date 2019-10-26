@@ -1,0 +1,24 @@
+.navbar {
+    position: fixed;
+    @include flexy(space-between, center);
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: $navbar-shadow;
+    padding: pxtorem(16px) pxtorem(80px);
+
+    background: $white;
+    z-index: 2;
+
+    &-menu {
+        @include flexy(center, center);
+
+        &--link {
+            @extend %navbar-link;
+
+            &:hover {
+                color: $dark-blue;
+            }
+        }
+    }
+}

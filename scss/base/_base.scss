@@ -1,0 +1,37 @@
+@import url($font-source);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-family;
+    width: 100vw;
+    overflow-x: hidden;
+    @extend %letter-spacing-wide;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section {
+    width: 100%;
+    padding-top: 12.5rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}

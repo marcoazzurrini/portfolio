@@ -1,0 +1,25 @@
+    
+    .blue-bg {
+        background: $dark-blue;
+        color: $white;
+        padding: .5rem 0rem;
+        display: inline-block;
+        transform: $rotate-anticlock;
+    }
+
+    .underline {
+        text-decoration: underline;
+    }
+
+    a {
+        color: $black;
+    }
+
+    .italic {
+        font-style: italic;
+    }
+
+    .rotate {
+        display: inline-block;
+        transform: $rotate-clockwise;
+    }

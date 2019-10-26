@@ -1,0 +1,6 @@
+@mixin flexy($just, $alig, $dir: row) {
+    display: flex;
+    justify-content: $just;
+    align-items: $alig;
+    flex-direction: $dir;
+};

@@ -1,0 +1,69 @@
+%navbar-link {
+    font-size: 1.2rem;
+    color: $grey;
+    cursor: pointer;
+    font-weight: $font-weight-bold;
+    display: block;
+    height: 100%;
+    padding: 1rem 2rem;
+}
+
+%main-title {
+    font-size: 7rem;
+    line-height: 1.2;
+    font-weight: $font-weight-light;
+    color: $dark-grey;
+    margin-bottom: 2rem;
+}
+
+%header-hero {
+    font-size: 1.8rem;
+    color: $grey;
+    font-weight: $font-weight-semibold;
+}
+
+%letter-spacing-wide {
+    letter-spacing: 1.5px;
+}
+
+%section-title {
+    font-size: 2.5rem;
+    color: $dark-blue;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    margin: 0px 0px 1rem;
+    margin-bottom: 3rem;
+}
+
+%section-text {
+    color: $grey;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+%section-description {
+    font-size: 2rem;
+    color: $grey;
+    font-weight: 400;
+    margin-bottom: 2.25rem;
+}
+
+%section-text-big {
+    font-weight: 600;
+    color: $dark-grey;
+    margin: 5rem 0;
+    font-size: 2rem;
+}
+
+%about-skills {
+    color: $dark-blue;
+    width: 50%;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    font-weight: 700;
+    margin:  0 auto;
+}
