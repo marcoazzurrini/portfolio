@@ -27,7 +27,7 @@
     <!-- END OF NAVBAR -->
 
     <!-- HEADER -->
-    <header class="header">
+    <header id="header" class="header">
         <div class="header-container">
             <h1 class="header-title">Hello ✌🏼, <br> I`m <span class="header-title--blue">Marco</span></h1>
             <h2 class="header-hero">A <span id="typed" class="header-hero--black"></span> Front-end developer</h2>
@@ -75,6 +75,8 @@
         </div>
     </main>
 
+    <a href="#header"><i class="fas fa-chevron-circle-up fa-4x"></i></a>
+
     <script src="js/typed.js"></script>
     <script>
     var options = {
@@ -87,6 +89,8 @@
     };
 
     var typed = new Typed('#typed', options);
-</script>
+    </script>
+    <script src="js/app.js"></script>
+
 </body>
 </html>

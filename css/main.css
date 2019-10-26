@@ -229,6 +229,24 @@ section {
   margin-bottom: 0.5rem;
 }
 
+.fa-chevron-circle-up {
+  color: #127EB1;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  z-index: 2;
+  transition: all 0.25s;
+  cursor: pointer;
+  opacity: 0;
+}
+.fa-chevron-circle-up:hover {
+  bottom: 3rem;
+}
+
+.visible {
+  opacity: 1 !important;
+}
+
 .blue-bg {
   background: #127EB1;
   color: #fff;

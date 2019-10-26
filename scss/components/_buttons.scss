@@ -61,3 +61,22 @@
         }
     }
 }
+
+.fa-chevron-circle-up {
+    color: $dark-blue;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    z-index: 2;
+    transition: all .25s;
+    cursor: pointer;
+    opacity: 0;
+
+    &:hover {
+        bottom: 3rem;
+    }
+}
+
+.visible {
+    opacity: 1 !important;
+}
