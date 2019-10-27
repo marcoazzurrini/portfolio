@@ -125,6 +125,7 @@ section {
 }
 .header-title--blue {
   color: #127EB1;
+  font-weight: 700;
 }
 .header-hero--black {
   color: #333333;
@@ -167,9 +168,16 @@ section {
   top: 0;
   left: 0;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
-  padding: 1rem 5rem;
+  padding: 1rem 7.5rem;
   background: #fff;
   z-index: 2;
+}
+.navbar-brand {
+  max-width: 180px;
+  padding-left: 5rem;
+}
+.navbar-brand img {
+  width: 100%;
 }
 .navbar-menu {
   display: flex;
