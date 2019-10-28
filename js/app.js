@@ -37,7 +37,7 @@ var morphing = anime({
         { value: 'M1920,0H868.4s-59.175,497.641,497.641,497.641S1920,1043.2,1920,1043.2Z'}
 
     ],
-    // easing: 'easeInOutQuint',
+    easing: 'easeInOutQuad',
     duration: 2500,
     loop: true,
     autoplay: true
