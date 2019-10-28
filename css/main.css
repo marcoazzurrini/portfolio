@@ -27,7 +27,7 @@ body {
   letter-spacing: 1.5px;
 }
 
-.about-title {
+.section-title {
   font-size: 2.5rem;
   color: #127EB1;
   text-transform: uppercase;
@@ -36,7 +36,7 @@ body {
   margin-bottom: 3rem;
 }
 
-.about-text {
+.section-text {
   color: #575757;
   font-weight: 400;
   font-size: 1.7rem;
@@ -45,21 +45,21 @@ body {
   margin-bottom: 2rem;
 }
 
-.about-description {
+.section-description, .section-email {
   font-size: 2rem;
   color: #575757;
   font-weight: 400;
   margin-bottom: 2.25rem;
 }
 
-.about-text-big {
+.section-text-big {
   font-weight: 600;
   color: #333333;
   margin: 5rem 0;
   font-size: 2rem;
 }
 
-.about-text--skills {
+.section-text--skills {
   color: #127EB1;
   width: 50%;
   text-transform: uppercase;
@@ -101,7 +101,7 @@ section {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1150px;
   width: 100%;
   margin: auto;
 }
@@ -145,17 +145,100 @@ section {
   bottom: 2.25rem;
 }
 
-.about {
+.section {
   text-align: center;
   margin-bottom: 10rem;
 }
-.about-btns {
+.section-btns {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
   width: 50%;
   margin: auto;
+}
+
+.about {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+.section .reverse {
+  flex-direction: row-reverse !important;
+}
+.section-project-title {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #fff;
+  margin: 7rem 0px 3.5rem;
+  text-transform: uppercase;
+}
+.section-project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.section-project-image {
+  width: 50%;
+}
+.section-project-details {
+  text-align: left;
+  padding: 0 2.5rem;
+}
+.section-project-details-description {
+  font-size: 1.4rem;
+  color: #575757;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+.section-project-details-technologies {
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 0px 0px 3rem;
+}
+.section-project-details .section-btns {
+  margin-right: auto;
+  margin-left: -1rem;
+}
+
+.section-email {
+  font-weight: 700;
+  color: #333333;
+}
+.section-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 3.5rem;
+}
+.section-social-item {
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid #127EB1;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 1rem;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 5.5rem;
+}
+.footer-branding {
+  max-width: 20rem;
 }
 
 .navbar {

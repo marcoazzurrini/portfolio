@@ -1,4 +1,4 @@
-.about {
+.section {
     text-align: center;
     margin-bottom: 10rem;
     &-title {
@@ -26,4 +26,9 @@
         width: 50%;
         margin: auto;
     }
+}
+
+.about {
+    padding-left: 7rem;
+    padding-right: 7rem;
 }

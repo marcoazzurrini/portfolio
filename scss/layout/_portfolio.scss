@@ -1,0 +1,51 @@
+.section {
+
+    .reverse {
+        flex-direction: row-reverse !important;
+    }
+    
+
+    &-project {
+        &-title {
+            font-weight: $font-weight-semibold;
+            font-size: 2rem;
+            color: $white;
+            margin: 7rem 0px 3.5rem;
+            text-transform: uppercase;
+        }
+
+        &-container {
+            @include flexy(center, center);
+        }
+    
+        &-image {
+            width: 50%;
+        }
+    
+        &-details {
+            text-align: left;
+            padding: 0 2.5rem;
+    
+            &-description {
+                font-size: 1.4rem;
+                color: $grey;
+                font-weight: $font-weight-medium;
+                line-height: 1.7;
+                margin-bottom: 2.5rem;
+            }
+    
+            &-technologies {
+                color: $dark-grey;
+                text-transform: uppercase;
+                font-weight: $font-weight-bold;
+                font-size: 1.25rem;
+                margin: 0px 0px 3rem;
+            }
+    
+            .section-btns {
+                margin-right: auto;
+                margin-left: -1rem;
+            }
+        }
+    }
+}

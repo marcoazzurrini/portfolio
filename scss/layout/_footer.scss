@@ -1,0 +1,9 @@
+.footer {
+    width: 100%;
+    @include flexy(center, center);
+    padding-bottom: 5.5rem;
+
+    &-branding {
+        max-width: 20rem;
+    }
+}
