@@ -46,10 +46,10 @@ var morphing = anime({
 var morphingMobile = anime({
     targets: '.morph-mobile',
     d: [
-        { value: 'M.46,0H374.513V403.463S310.179,91.9,172.322,189.324.46,0,.46,0Z'},
-        { value: 'M.46,0H374.513V403.463s-3.676-207.705-202.191-214.138S.46,0,.46,0Z'}
+        { value: 'M0,0H374.513V338.21S191.362,330.6,204.818,168.515,0,57.9,0,57.9Z'},
+        { value: 'M0,0H374.513V338.21S364.178,168.515,204.818,168.515,0,57.9,0,57.9Z'}
     ],
-    // easing: 'easeInOutQuint',
+    easing: 'easeInOutQuad',
     duration: 2500,
     loop: true,
     autoplay: true
