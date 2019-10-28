@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,600,700&display=swap");
-.navbar-menu--link {
+.mobile-overlay--link, .navbar-menu--link {
   font-size: 1.2rem;
   color: #575757;
   cursor: pointer;
@@ -127,9 +127,20 @@ section {
   color: #127EB1;
   font-weight: 700;
 }
+@media only screen and (max-width: 768px) {
+  .header-title {
+    font-size: 4rem;
+    padding-top: 5rem;
+  }
+}
 .header-hero--black {
   color: #333333;
   font-style: italic;
+}
+@media only screen and (max-width: 768px) {
+  .header-hero {
+    font-size: 1.5rem;
+  }
 }
 .header .chevron-down {
   width: 2rem;
@@ -157,14 +168,30 @@ section {
   width: 50%;
   margin: auto;
 }
+@media only screen and (max-width: 768px) {
+  .section-btns {
+    width: 100%;
+  }
+}
 
 .about {
   padding-left: 7rem;
   padding-right: 7rem;
 }
+@media only screen and (max-width: 768px) {
+  .about {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 
 .section .reverse {
-  flex-direction: row-reverse !important;
+  flex-direction: row-reverse;
+}
+@media only screen and (max-width: 768px) {
+  .section .reverse {
+    flex-direction: column;
+  }
 }
 .section-project-title {
   font-weight: 600;
@@ -179,8 +206,20 @@ section {
   align-items: center;
   flex-direction: row;
 }
+@media only screen and (max-width: 768px) {
+  .section-project-container {
+    flex-direction: column;
+  }
+}
 .section-project-image {
   width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .section-project-image {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+  }
 }
 .section-project-details {
   text-align: left;
@@ -189,7 +228,7 @@ section {
 .section-project-details-description {
   font-size: 1.4rem;
   color: #575757;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.7;
   margin-bottom: 2.5rem;
 }
@@ -229,6 +268,12 @@ section {
   margin: 0 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .contact {
+    padding-top: 1rem;
+  }
+}
+
 .footer {
   width: 100%;
   display: flex;
@@ -255,12 +300,23 @@ section {
   background: #fff;
   z-index: 2;
 }
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.5625rem;
+  }
+}
 .navbar-brand {
   max-width: 180px;
   padding-left: 5rem;
 }
 .navbar-brand img {
   width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .navbar-brand {
+    margin-right: auto;
+    padding-left: 0;
+  }
 }
 .navbar-menu {
   display: flex;
@@ -270,6 +326,57 @@ section {
 }
 .navbar-menu--link:hover {
   color: #127EB1;
+}
+@media only screen and (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+  }
+}
+.navbar .fa-bars {
+  color: #127EB1;
+  display: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .navbar .fa-bars {
+    display: inline-block;
+    margin-left: auto;
+  }
+}
+
+.mobile-overlay {
+  left: -100vw;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background: #fff;
+  z-index: 99;
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.mobile-overlay--link {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+.mobile-overlay--link:hover {
+  color: #127EB1;
+}
+.mobile-overlay #close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2.25rem;
+  color: #127EB1;
+  cursor: pointer;
+}
+
+.show {
+  display: flex !important;
+  left: 0 !important;
 }
 
 .btn-lg {

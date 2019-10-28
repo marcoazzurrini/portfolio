@@ -1,7 +1,11 @@
 .section {
 
     .reverse {
-        flex-direction: row-reverse !important;
+        flex-direction: row-reverse;
+
+        @media only screen and (max-width: $mobile) {
+            @include project-container-dir;
+        }
     }
     
 
@@ -16,10 +20,18 @@
 
         &-container {
             @include flexy(center, center);
+
+            @media only screen and (max-width: $mobile) {
+                @include project-container-dir;
+            }
         }
     
         &-image {
             width: 50%;
+
+            @media only screen and (max-width: $mobile) {
+                @include project-image-width;
+            }
         }
     
         &-details {
@@ -29,7 +41,7 @@
             &-description {
                 font-size: 1.4rem;
                 color: $grey;
-                font-weight: $font-weight-medium;
+                font-weight: $font-weight-semibold;
                 line-height: 1.7;
                 margin-bottom: 2.5rem;
             }

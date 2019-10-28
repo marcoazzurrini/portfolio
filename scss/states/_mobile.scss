@@ -1,0 +1,50 @@
+@mixin about-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@mixin section-btn {
+    width: 100%;
+}
+
+@mixin project-container-dir {
+    flex-direction: column;
+}
+
+@mixin project-image-width {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+
+@mixin contact-padding {
+    padding-top: 1rem;
+}
+
+@mixin header-title {
+    font-size: 4rem;
+    padding-top: 5rem;
+}
+
+@mixin header-hero-size {
+    font-size: 1.5rem;
+}
+
+// NAVBAR RESPONSIVE
+@mixin navbar-res {
+    padding: pxtorem(16px) pxtorem(25px);
+}
+
+@mixin navbar-menu-res {
+    display: none;
+}
+
+@mixin navbar-toggle-res {
+    display: inline-block;
+    margin-left: auto;
+}
+
+@mixin navbar-branding-res {
+    margin-right: auto;
+    padding-left: 0;
+}

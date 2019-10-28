@@ -1,3 +1,4 @@
+// SCROLL UP BUTTON (BOTTOM RIGHT)
 const header = document.getElementById('header');
 const chevronUp = document.querySelector('.fa-chevron-circle-up');
 
@@ -10,3 +11,16 @@ window.addEventListener('scroll', function() {
         chevronUp.classList.remove('visible');
     }
 })
+
+// NAVBAR RESPONSIVE
+const menuOverlay = document.querySelector('.mobile-overlay');
+
+document.addEventListener('click', function(e) {
+
+    if(e.target.id === 'open-btn') {
+        menuOverlay.classList.add('show');
+    } else if(e.target.id === 'close-btn'
+    || e.target.classList.contains('mobile-overlay--link')) {
+        menuOverlay.classList.remove('show');
+    }
+});

@@ -5,6 +5,7 @@
         font-weight: $font-weight-bold;
         color: $dark-grey;
     }
+
     &-social {
         @include flexy(center, center);
         margin-top: 3.5rem;
@@ -20,5 +21,11 @@
 
         margin: 0 1rem;
        } 
+    }
+}
+
+.contact {
+    @media only screen and (max-width: $mobile) {
+        @include contact-padding;
     }
 }
