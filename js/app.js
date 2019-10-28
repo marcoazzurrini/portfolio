@@ -27,21 +27,21 @@ document.addEventListener('click', function(e) {
 
 // HEADER BRANDING ANIMATION (ANIMEJS)
 import anime from './anime.es.js';
-// const overlay = document.querySelector('.header-branding');
+const overlay = document.querySelector('.header-branding');
 const overlayMobile = document.querySelector('.header-branding-mobile');
 
-// var morphing = anime({
-//     targets: '.morph',
-//     d: [
-//         { value: 'M1920,0H868.4s366.482,115.282,497.641,497.641S1920,1043.2,1920,1043.2Z'},
-//         { value: 'M1920,0H868.4s-59.175,497.641,497.641,497.641S1920,1043.2,1920,1043.2Z'}
+var morphing = anime({
+    targets: '.morph',
+    d: [
+        { value: 'M1920,0H868.4s366.482,115.282,497.641,497.641S1920,1043.2,1920,1043.2Z'},
+        { value: 'M1920,0H868.4s-59.175,497.641,497.641,497.641S1920,1043.2,1920,1043.2Z'}
 
-//     ],
-//     // easing: 'easeInOutQuint',
-//     duration: 2500,
-//     loop: true,
-//     autoplay: true
-// });
+    ],
+    // easing: 'easeInOutQuint',
+    duration: 2500,
+    loop: true,
+    autoplay: true
+});
 
 var morphingMobile = anime({
     targets: '.morph-mobile',
