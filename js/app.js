@@ -24,3 +24,6 @@ document.addEventListener('click', function(e) {
         menuOverlay.classList.remove('show');
     }
 });
+
+// HEADER BRANDING ANIMATION (ANIMEJS)
+import anime from './anime.es.js';
