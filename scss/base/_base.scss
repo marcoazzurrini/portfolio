@@ -1,5 +1,10 @@
 @import url($font-source);
 
+@font-face {
+    font-family: 'SegoeUI-Light';
+    src: url('../../fonts/Segoe\ UI\ Light.ttf')  format('truetype');
+  }
+
 * {
     margin: 0;
     padding: 0;
