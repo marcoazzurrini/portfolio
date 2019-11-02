@@ -201,6 +201,10 @@ section {
 @media only screen and (max-width: 768px) {
   .section-btns {
     width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
   }
 }
 
@@ -243,35 +247,59 @@ section {
 }
 .section-project-image {
   width: 50%;
+  box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.75);
 }
 @media only screen and (max-width: 768px) {
   .section-project-image {
-    width: 95%;
+    width: 90%;
     margin: auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
   }
 }
 .section-project-details {
   text-align: left;
   padding: 0 2.5rem;
 }
+@media only screen and (max-width: 768px) {
+  .section-project-details {
+    text-align: center;
+  }
+}
 .section-project-details-description {
   font-size: 1.4rem;
   color: #575757;
   font-weight: 600;
   line-height: 1.7;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.25rem;
 }
 .section-project-details-technologies {
   color: #333333;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.25rem;
-  margin: 0px 0px 3rem;
+  margin: 0px 0px 2.25rem;
 }
 .section-project-details .section-btns {
   margin-right: auto;
   margin-left: -1rem;
+}
+.section-project-details .section-btns-single {
+  margin-right: auto;
+  margin-left: 0.25rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .section-project-details .section-btns-single {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+  }
 }
 
 .section-email {
@@ -451,6 +479,11 @@ section {
   margin-top: 4.5rem;
   margin-bottom: 0.5rem;
 }
+@media only screen and (max-width: 768px) {
+  .btn-sm {
+    margin-top: 3.5rem;
+  }
+}
 
 .btn-sm--outline {
   color: #333333;
@@ -468,6 +501,11 @@ section {
 .btn-sm--outline:hover:hover {
   margin-top: 4.5rem;
   margin-bottom: 0.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .btn-sm--outline {
+    margin-top: 3.5rem;
+  }
 }
 
 .fa-chevron-circle-up {

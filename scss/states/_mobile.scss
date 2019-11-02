@@ -9,6 +9,11 @@
 
 @mixin section-btn {
     width: 100%;
+    @include flexy(space-evenly, center);
+}
+
+@mixin btn-sm-mobile {
+    margin-top: 3.5rem;
 }
 
 @mixin project-container-dir {
@@ -16,9 +21,13 @@
 }
 
 @mixin project-image-width {
-    width: 95%;
+    width: 90%;
     margin: auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+@mixin project-details {
+    text-align: center;
 }
 
 @mixin contact-padding {

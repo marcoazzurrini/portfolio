@@ -28,6 +28,7 @@
     
         &-image {
             width: 50%;
+            box-shadow: $project-img-shadow;
 
             @media only screen and (max-width: $mobile) {
                 @include project-image-width;
@@ -37,13 +38,17 @@
         &-details {
             text-align: left;
             padding: 0 2.5rem;
+
+            @media only screen and (max-width: $mobile) {
+                @include project-details;
+            }
     
             &-description {
                 font-size: 1.4rem;
                 color: $grey;
                 font-weight: $font-weight-semibold;
                 line-height: 1.7;
-                margin-bottom: 2.5rem;
+                margin-bottom: 2.25rem;
             }
     
             &-technologies {
@@ -51,12 +56,24 @@
                 text-transform: uppercase;
                 font-weight: $font-weight-bold;
                 font-size: 1.25rem;
-                margin: 0px 0px 3rem;
+                margin: 0px 0px 2.25rem;
             }
     
             .section-btns {
                 margin-right: auto;
                 margin-left: -1rem;
+            }
+
+            .section-btns-single {
+                margin-right: auto;
+                margin-left: .25rem;
+
+                @include flexy(start, center);
+                width: 50%;
+        
+                @media only screen and (max-width: $mobile) {
+                    @include section-btn;
+                }
             }
         }
     }
