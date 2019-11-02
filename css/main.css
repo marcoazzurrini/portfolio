@@ -149,7 +149,7 @@ section {
   bottom: 2rem;
   left: calc(50% - 1rem);
   transition: all 0.25s;
-  z-index: 2;
+  z-index: 0;
 }
 .header .chevron-down img {
   width: 100%;
@@ -346,7 +346,7 @@ section {
   padding-bottom: 5.5rem;
 }
 .footer-branding {
-  max-width: 20rem;
+  width: 25rem;
 }
 
 .navbar {
