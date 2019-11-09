@@ -42,6 +42,10 @@
         }
     }
 
+    &-btns {
+        @include flexy(flex-start, center);
+    }
+
     .chevron-down {
         width: 2rem;
         position: absolute;

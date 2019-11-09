@@ -7,6 +7,7 @@
     display: inline-block;
     transition: all .25s;
     margin-top: 6.5rem;
+    cursor: pointer;
     
     a {
         color: $white;
@@ -19,6 +20,34 @@
     }
 }
 
+
+.btn-lg--outline {
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    box-shadow: $btn-lg-shadow;
+    font-size: 1.1rem;
+    display: inline-block;
+    transition: all .25s;
+    margin-top: 6.5rem;
+    border: solid 1px $dark-grey;
+    cursor: pointer;
+    margin-left: 1rem;
+    
+    a {
+        color: $dark-grey;
+        font-weight: $font-weight-bold;
+    }
+
+    &:hover {
+        margin-top: 5.85rem;
+        margin-bottom: .75rem;
+    }
+    
+    i {
+        margin-right: .5rem;
+        display: inline-block;
+    }
+}
 
 .btn-sm {
     color: #fff;

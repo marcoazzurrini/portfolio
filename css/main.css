@@ -128,7 +128,7 @@ section {
   color: #127EB1;
   font-weight: 700;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1068px) {
   .header-title {
     font-size: 4rem;
     padding-top: 5rem;
@@ -138,10 +138,16 @@ section {
   color: #333333;
   font-style: italic;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1068px) {
   .header-hero {
     font-size: 1.5rem;
   }
+}
+.header-btns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
 }
 .header .chevron-down {
   width: 2rem;
@@ -166,7 +172,7 @@ section {
   right: 0;
   z-index: -1;
 }
-@media (max-width: 768px) {
+@media (max-width: 1068px) {
   .header-branding {
     display: none;
   }
@@ -180,7 +186,7 @@ section {
   z-index: -1;
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 1068px) {
   .header-branding-mobile {
     display: inline-block;
   }
@@ -198,7 +204,7 @@ section {
   width: 50%;
   margin: auto;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1068px) {
   .section-btns {
     width: 100%;
     display: flex;
@@ -212,7 +218,7 @@ section {
   padding-left: 7rem;
   padding-right: 7rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1068px) {
   .about {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -222,7 +228,7 @@ section {
 .section .reverse {
   flex-direction: row-reverse;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1068px) {
   .section .reverse {
     flex-direction: column;
   }
@@ -240,7 +246,7 @@ section {
   align-items: center;
   flex-direction: row;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1068px) {
   .section-project-container {
     flex-direction: column;
   }
@@ -249,18 +255,18 @@ section {
   width: 50%;
   box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.75);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1068px) {
   .section-project-image {
     width: 90%;
     margin: auto;
-    margin-bottom: 2.5rem;
+    margin-bottom: 5rem;
   }
 }
 .section-project-details {
   text-align: left;
   padding: 0 2.5rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1068px) {
   .section-project-details {
     text-align: center;
   }
@@ -292,7 +298,7 @@ section {
   flex-direction: row;
   width: 50%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1068px) {
   .section-project-details .section-btns-single {
     width: 100%;
     display: flex;
@@ -306,7 +312,7 @@ section {
   font-weight: 700;
   color: #333333;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1068px) {
   .section-email {
     font-size: 1.6rem;
   }
@@ -331,7 +337,7 @@ section {
   margin: 0 1rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1068px) {
   .contact {
     padding: 0.75rem;
   }
@@ -363,7 +369,7 @@ section {
   background: #fff;
   z-index: 2;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1068px) {
   .navbar {
     padding: 1rem 1.5625rem;
   }
@@ -375,7 +381,7 @@ section {
 .navbar-brand img {
   width: 100%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1068px) {
   .navbar-brand {
     margin-right: auto;
     padding-left: 0;
@@ -390,7 +396,7 @@ section {
 .navbar-menu--link:hover {
   color: #127EB1;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1068px) {
   .navbar-menu {
     display: none;
   }
@@ -400,7 +406,7 @@ section {
   display: none;
   cursor: pointer;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1068px) {
   .navbar .fa-bars {
     display: inline-block;
     margin-left: auto;
@@ -451,6 +457,7 @@ section {
   display: inline-block;
   transition: all 0.25s;
   margin-top: 6.5rem;
+  cursor: pointer;
 }
 .btn-lg a {
   color: #fff;
@@ -459,6 +466,31 @@ section {
 .btn-lg:hover {
   margin-top: 5.85rem;
   margin-bottom: 0.75rem;
+}
+
+.btn-lg--outline {
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  display: inline-block;
+  transition: all 0.25s;
+  margin-top: 6.5rem;
+  border: solid 1px #333333;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.btn-lg--outline a {
+  color: #333333;
+  font-weight: 700;
+}
+.btn-lg--outline:hover {
+  margin-top: 5.85rem;
+  margin-bottom: 0.75rem;
+}
+.btn-lg--outline i {
+  margin-right: 0.5rem;
+  display: inline-block;
 }
 
 .btn-sm {
@@ -479,7 +511,7 @@ section {
   margin-top: 4.5rem;
   margin-bottom: 0.5rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1068px) {
   .btn-sm {
     margin-top: 3.5rem;
   }
@@ -502,7 +534,7 @@ section {
   margin-top: 4.5rem;
   margin-bottom: 0.5rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1068px) {
   .btn-sm--outline {
     margin-top: 3.5rem;
   }
