@@ -47,6 +47,10 @@
         margin-right: .5rem;
         display: inline-block;
     }
+
+    @media only screen and (max-width: $mobile-sm) {
+        @include btn-lg--outline;
+    }
 }
 
 .btn-sm {
