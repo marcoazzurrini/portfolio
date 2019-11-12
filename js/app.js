@@ -54,7 +54,3 @@ var morphingMobile = anime({
     loop: true,
     autoplay: true
 });
-
-fetch('https://raw.github.com/marcoazzurrini/portfolio/blob/master/js/example.md') 
-    .then(response => response.text())
-    .then(result => console.log(result));
